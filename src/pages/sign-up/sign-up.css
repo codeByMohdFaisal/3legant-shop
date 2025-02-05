@@ -68,9 +68,22 @@
 .signup-input-div {
   margin-bottom: 32px;
   height: 40px;
-  /* border-bottom: 1px solid #e8ecef; */
   position: relative;
 }
+
+.email-input:focus + .sign-up-label {
+  display: none;
+}
+.password-input:focus + .sign-up-label {
+  display: none;
+}
+.name-input:focus + .sign-up-label {
+  display: none;
+}
+.username-input:focus + .sign-up-label {
+  display: none;
+}
+
 .sign-up-label {
   font-size: 16px;
   font-family: var(--primary-ff);
@@ -79,6 +92,7 @@
   line-height: 26px;
   position: absolute;
   top: 0;
+  pointer-events: none;
 }
 .signup-input {
   width: 100%;

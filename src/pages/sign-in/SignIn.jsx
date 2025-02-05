@@ -1,16 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import signInChairImg from "../../assets/images/chair.png";
 import AuthenticationBtn from "../../components/buttons/AuthenticationBtn";
 import companyLogo from "../../assets/images/company-logo.png";
 
 const SignIn = () => {
+  const [passwordVal, setPasswordVal] = useState("");
+  const [emailVal, setEmailVal] = useState("");
+  const handlePassword = (e) => {
+    setPasswordVal(e.target.value);
+  };
+  const handleEmail = (e) => {
+    setEmailVal(e.target.value);
+  };
   return (
     <div className="signup-div">
       <div className="signup-left-div">
         <div className="logo-div">
           <img src={companyLogo} alt="company-logo" />
         </div>
-        {/* <img className="signup-img-left" src={signInChairImg} /> */}
       </div>
       <div className="signup-right-div">
         <div className="signup-right-container">
@@ -21,13 +28,37 @@ const SignIn = () => {
           </p>
           <div className="signup-form">
             <div className="signup-input-div">
-              <input className="signup-input" type="text" />
-              <p className="sign-up-label">Your usernam or email address</p>
+              <input
+                className="signup-input email-input"
+                type="text"
+                value={emailVal}
+                onChange={handleEmail}
+              />
+              <p
+                className="sign-up-label"
+                style={{
+                  display: emailVal && "none",
+                }}
+              >
+                Your username or email address
+              </p>
             </div>
 
             <div className="signup-input-div password-field">
-              <input className="signup-input" type="password" />
-              <p className="sign-up-label">Password</p>
+              <input
+                className="signup-input password-input"
+                type="password"
+                value={passwordVal}
+                onChange={handlePassword}
+              />
+              <p
+                className="sign-up-label"
+                style={{
+                  display: passwordVal && "none",
+                }}
+              >
+                Password
+              </p>
               <svg
                 width="24"
                 height="24"

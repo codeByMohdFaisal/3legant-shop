@@ -3,15 +3,31 @@ import "./sign-up.css";
 import signInChairImg from "../../assets/images/chair.png";
 import AuthenticationBtn from "../../components/buttons/AuthenticationBtn";
 import companyLogo from "../../assets/images/company-logo.png";
+import { useState } from "react";
 
 const SignUp = () => {
+  const [nameVal, setNameVal] = useState("");
+  const [usernameVal, setUsernameVal] = useState("");
+  const [passwordVal, setPasswordVal] = useState("");
+  const [emailVal, setEmailVal] = useState("");
+  const handlePassword = (e) => {
+    setPasswordVal(e.target.value);
+  };
+  const handleEmail = (e) => {
+    setEmailVal(e.target.value);
+  };
+  const handleUsername = (e) => {
+    setUsernameVal(e.target.value);
+  };
+  const handleName = (e) => {
+    setNameVal(e.target.value);
+  };
   return (
     <div className="signup-div">
       <div className="signup-left-div">
         <div className="logo-div">
           <img src={companyLogo} alt="company-logo" />
         </div>
-        <img className="signup-img-left" src={signInChairImg} />
       </div>
       <div className="signup-right-div">
         <div className="signup-right-container">
@@ -22,20 +38,68 @@ const SignUp = () => {
           </p>
           <div className="signup-form">
             <div className="signup-input-div">
-              <input className="signup-input" type="text" />
-              <p className="sign-up-label">Your name</p>
+              <input
+                className="signup-input name-input"
+                type="text"
+                value={nameVal}
+                onChange={handleName}
+              />
+              <p
+                className="sign-up-label "
+                style={{
+                  display: nameVal && "none",
+                }}
+              >
+                Your name
+              </p>
             </div>
             <div className="signup-input-div">
-              <input className="signup-input" type="text" />
-              <p className="sign-up-label">Username</p>
+              <input
+                className="signup-input username-input"
+                type="text"
+                value={usernameVal}
+                onChange={handleUsername}
+              />
+              <p
+                className="sign-up-label "
+                style={{
+                  display: usernameVal && "none",
+                }}
+              >
+                Username
+              </p>
             </div>
             <div className="signup-input-div">
-              <input className="signup-input" type="email" />
-              <p className="sign-up-label">Email address</p>
+              <input
+                className="signup-input email-input"
+                type="email"
+                value={emailVal}
+                onChange={handleEmail}
+              />
+              <p
+                className="sign-up-label"
+                style={{
+                  display: emailVal && "none",
+                }}
+              >
+                Email address
+              </p>
             </div>
             <div className="signup-input-div password-field">
-              <input className="signup-input" type="password" />
-              <p className="sign-up-label">Password</p>
+              <input
+                className="signup-input password-input"
+                type="password"
+                value={passwordVal}
+                onChange={handlePassword}
+              />
+              <p
+                className="sign-up-label"
+                style={{
+                  display: passwordVal && "none",
+                }}
+              >
+                Password
+              </p>
               <svg
                 width="24"
                 height="24"
