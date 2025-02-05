@@ -100,6 +100,11 @@
   border: none;
   outline: none;
   border-bottom: 1px solid #e8ecef;
+  font-size: 16px;
+  font-family: var(--primary-ff);
+  font-weight: 400;
+  /* color: #6c7275; */
+  line-height: 26px;
 }
 .password-field {
   position: relative;
