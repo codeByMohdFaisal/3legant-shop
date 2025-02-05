@@ -10,7 +10,7 @@ const SignIn = () => {
         <div className="logo-div">
           <img src={companyLogo} alt="company-logo" />
         </div>
-        <img className="signup-img-left" src={signInChairImg} />
+        {/* <img className="signup-img-left" src={signInChairImg} /> */}
       </div>
       <div className="signup-right-div">
         <div className="signup-right-container">

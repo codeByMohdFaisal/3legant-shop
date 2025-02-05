@@ -10,13 +10,20 @@
 }
 
 .signup-left-div {
+  height: 100vh;
   width: 49%;
   position: relative;
+  background-image: url(/src/assets/images/chair.png);
+  background-size: contain;
+  background-color: #f3f5f7;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .logo-div {
   position: absolute;
   top: 32px;
   right: 50%;
+  transform: translateX(50%);
 }
 .signup-img-left {
   width: 100%;
@@ -136,6 +143,9 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .signup-left-div {
+    height: 65vh;
+  }
   .signup-div {
     flex-direction: column;
   }
@@ -149,6 +159,7 @@
     width: 83%;
     padding: 0px;
     margin: 0 auto;
+    padding-bottom: 30px;
   }
   .policy-text {
     font-weight: 200;
