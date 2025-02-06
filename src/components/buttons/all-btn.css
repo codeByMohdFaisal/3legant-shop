@@ -1,0 +1,24 @@
+.authentication-btn {
+  border-radius: 8px;
+  margin-top: 32px;
+  height: 48px;
+  width: 100%;
+  color: white;
+  background-color: #141718;
+  font-size: 16px;
+  font-family: var(--secondary-ff);
+  font-weight: 400;
+  line-height: 26px;
+  cursor: pointer;
+}
+.secondary-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: fit-content;
+  font-size: 14px;
+  font-family: var(--secondary-ff);
+  font-weight: var(--medium-fw);
+  line-height: 24px;
+  cursor: pointer;
+}
