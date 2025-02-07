@@ -1,3 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin-bottom: 0 !important;
+}
+ul {
+  list-style: none;
+}
+
 :root {
   --primary-ff: "Poppins", serif;
   --secondary-ff: "Inter", serif;
@@ -22,8 +33,3 @@
 700	Bold *
 800	Extra Bold (Ultra Bold)
 900	Black (Heavy) */
-
-* {
-  margin: 0;
-  padding: 0;
-}
