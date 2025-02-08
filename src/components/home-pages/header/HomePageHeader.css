@@ -10,12 +10,6 @@
   position: relative;
 }
 
-.ntf-text {
-  font-size: 14px;
-  font-family: var(--secondary-ff);
-  font-weight: var(--semi-bold-fw);
-  line-height: 24px;
-}
 .ntf-cross-icon-div {
   cursor: pointer;
   position: absolute;

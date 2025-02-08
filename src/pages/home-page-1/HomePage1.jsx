@@ -26,7 +26,7 @@ const HomePage1 = () => {
           <img src={companyLogo} alt="company-logo" />
           <nav className="home-page-nav">
             <ul className="navbar-parent">
-              <li className="navbar-items selected-nav-items">Home</li>
+              <li className="navbar-items selected-nav-items ">Home</li>
               <li className="navbar-items">Shop</li>
               <li className="navbar-items">Product</li>
               <li className="navbar-items">Contact Us</li>
@@ -73,11 +73,11 @@ const HomePage1 = () => {
           </CCarousel>
         </div>
         <div className="carousel-content-div">
-          <p className="left-carousel-content">
+          <p className="left-carousel-content heading-72">
             Simply Unique<span className="carousel-content-left-span">/</span>{" "}
             Simply Better<span className="carousel-content-left-span">.</span>
           </p>
-          <p className="right-carousel-content">
+          <p className="right-carousel-content text-18-regular">
             <span className="carousel-content-right-span">3legant</span> is a
             gift & decorations store based in HCMC, Vietnam. Est since 2019.{" "}
           </p>
@@ -86,18 +86,18 @@ const HomePage1 = () => {
       <div className="home-page-container">
         <section className="home-page-products-section">
           <div className="left-product-div common-centered-img-properties">
-            <p className="product-heading">Living Room</p>
+            <p className="product-heading heading-34">Living Room</p>
             <SecondaryBtn btnText={"Shop Now"} arrowColor={"#121212"} />
           </div>
           <div className="right-product-div">
             <div className="right-product-sub-div1 common-centered-img-properties">
               {" "}
-              <p className="product-heading">Bedroom</p>
+              <p className="product-heading heading-34">Bedroom</p>
               <SecondaryBtn btnText={"Shop Now"} arrowColor={"#121212"} />
             </div>
             <div className="right-product-sub-div2 common-centered-img-properties">
               {" "}
-              <p className="product-heading">Kitchen</p>
+              <p className="product-heading heading-34">Kitchen</p>
               <SecondaryBtn btnText={"Shop Now"} arrowColor={"#121212"} />
             </div>
           </div>
