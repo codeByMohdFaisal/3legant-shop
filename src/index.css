@@ -41,6 +41,8 @@ ul {
   --text-fs-24: 24px;
   --text-fs-26: 26px;
 
+  --heading-fs-16: 16px;
+  --heading-fs-20: 20px;
   --heading-fs-28: 28px;
   --heading-fs-34: 34px;
   --heading-fs-40: 40px;
@@ -111,6 +113,14 @@ ul {
 .heading-20 {
   font-size: var(--heading-fs-20);
   line-height: 28px;
+  font-family: var(--primary-ff);
+  font-weight: var(--medium-fw);
+  color: var(--primary-fc);
+}
+
+.heading-16 {
+  font-size: var(--heading-fs-16);
+  line-height: 24px;
   font-family: var(--primary-ff);
   font-weight: var(--medium-fw);
   color: var(--primary-fc);

@@ -16,7 +16,7 @@
   align-items: center;
   gap: 5px;
   width: fit-content;
-  font-size: var(--text-fs-14);
+  font-size: var(--text-fs-16);
   font-family: var(--secondary-ff);
   font-weight: var(--medium-fw);
   line-height: 24px;
