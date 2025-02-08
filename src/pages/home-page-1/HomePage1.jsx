@@ -11,6 +11,7 @@ import banner1 from "../../assets/images/carousel-slide-1.png";
 import banner2 from "../../assets/images/carousel-slide-2.jpg";
 import banner3 from "../../assets/images/carousel-slide-3.jpg";
 import banner4 from "../../assets/images/carousel-slide-4.jpg";
+import SecondaryBtn from "../../components/buttons/SecondaryBtn";
 
 const HomePage1 = () => {
   return (
@@ -80,6 +81,37 @@ const HomePage1 = () => {
             <span className="carousel-content-right-span">3legant</span> is a
             gift & decorations store based in HCMC, Vietnam. Est since 2019.{" "}
           </p>
+        </div>
+      </div>
+      <div className="home-page-container">
+        <section className="home-page-products-section">
+          <div className="left-product-div common-centered-img-properties">
+            <p className="product-heading">Living Room</p>
+            <SecondaryBtn btnText={"Shop Now"} arrowColor={"#121212"} />
+          </div>
+          <div className="right-product-div">
+            <div className="right-product-sub-div1 common-centered-img-properties">
+              {" "}
+              <p className="product-heading">Bedroom</p>
+              <SecondaryBtn btnText={"Shop Now"} arrowColor={"#121212"} />
+            </div>
+            <div className="right-product-sub-div2 common-centered-img-properties">
+              {" "}
+              <p className="product-heading">Kitchen</p>
+              <SecondaryBtn btnText={"Shop Now"} arrowColor={"#121212"} />
+            </div>
+          </div>
+        </section>
+        <div className="home-page-container">
+          <section className="new-arival-section">
+            <div className="new-arival-title-section">
+              <p className="new-arival-title">New Arrivals</p>
+              <SecondaryBtn btnText={"More products"} arrowColor={"#121212"} />
+            </div>
+            <div className="new-arival-product-list-div">
+              <div className="new-arival-product-card"></div>
+            </div>
+          </section>
         </div>
       </div>
     </div>

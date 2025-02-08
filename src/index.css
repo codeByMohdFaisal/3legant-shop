@@ -2,12 +2,21 @@
   margin: 0;
   padding: 0;
 }
-p {
-  margin-bottom: 0 !important;
-}
+
 ul {
   list-style: none;
 }
+
+/* Value	Common weight name
+100	Thin (Hairline)
+200	Extra Light (Ultra Light)
+300	Light *
+400	Normal *
+500	Medium *
+600	Semi Bold (Demi Bold)
+700	Bold *
+800	Extra Bold (Ultra Bold)
+900	Black (Heavy) */
 
 :root {
   --primary-ff: "Poppins", serif;
@@ -21,15 +30,254 @@ ul {
   --bold-fw: 700;
   --extra-bold-fw: 800;
   --black-fw: 900;
+
+  /* Font size */
+  --text-fs-12: 12px;
+  --text-fs-14: 14px;
+  --text-fs-16: 16px;
+  --text-fs-18: 18px;
+  --text-fs-20: 20px;
+  --text-fs-20: 22px;
+  --text-fs-24: 24px;
+  --text-fs-26: 26px;
+
+  --heading-fs-28: 28px;
+  --heading-fs-34: 34px;
+  --heading-fs-40: 40px;
+  --heading-fs-54: 54px;
+  --heading-fs-72: 72px;
+  --heading-fs-80: 80px;
+  --heading-fs-96: 96px;
+
+  /* Colors */
+  --primary-fc: #121212;
+  --secondary-fc: #3e3e59;
+}
+.hero {
+  font-size: var(--heading-fs-96);
+  line-height: 96px;
+  font-family: var(--primary-ff);
+  font-weight: var(--medium-fw);
+  color: var(--primary-fc);
+}
+.heading-1 {
+  font-size: var(--heading-fs-80);
+  line-height: 84px;
+  font-family: var(--primary-ff);
+  font-weight: var(--medium-fw);
+  color: var(--primary-fc);
 }
 
-/* Value	Common weight name
-100	Thin (Hairline)
-200	Extra Light (Ultra Light)
-300	Light *
-400	Normal *
-500	Medium *
-600	Semi Bold (Demi Bold)
-700	Bold *
-800	Extra Bold (Ultra Bold)
-900	Black (Heavy) */
+.heading-2 {
+  font-size: var(--heading-fs-72);
+  line-height: 76px;
+  font-family: var(--primary-ff);
+  font-weight: var(--medium-fw);
+  color: var(--primary-fc);
+}
+
+.heading-3 {
+  font-size: var(--heading-fs-54);
+  line-height: 58px;
+  font-family: var(--primary-ff);
+  font-weight: var(--medium-fw);
+  color: var(--primary-fc);
+}
+
+.heading-4 {
+  font-size: var(--heading-fs-40);
+  line-height: 44px;
+  font-family: var(--primary-ff);
+  font-weight: var(--medium-fw);
+  color: var(--primary-fc);
+}
+
+.heading-5 {
+  font-size: var(--heading-fs-34);
+  line-height: 38px;
+  font-family: var(--primary-ff);
+  font-weight: var(--medium-fw);
+  color: var(--primary-fc);
+}
+
+.heading-6 {
+  font-size: var(--heading-fs-28);
+  line-height: 34px;
+  font-family: var(--primary-ff);
+  font-weight: var(--medium-fw);
+  color: var(--primary-fc);
+}
+
+.heading-7 {
+  font-size: var(--heading-fs-20);
+  line-height: 28px;
+  font-family: var(--primary-ff);
+  font-weight: var(--medium-fw);
+  color: var(--primary-fc);
+}
+
+.text-1-regular {
+  font-size: var(--text-fs-26);
+  line-height: 40px;
+  font-family: var(--secondary-ff);
+  font-weight: var(--regular-fw);
+  color: var(--secondary-fc);
+}
+.text-1-semi-bold {
+  font-size: var(--text-fs-26);
+  line-height: 40px;
+  font-family: var(--secondary-ff);
+  font-weight: var(--semi-bold-fw);
+  color: var(--secondary-fc);
+}
+
+.text-1-bold {
+  font-size: var(--text-fs-26);
+  line-height: 40px;
+  font-family: var(--secondary-ff);
+  font-weight: var(--bold-fw);
+  color: var(--secondary-fc);
+}
+
+.text-2-regular {
+  font-size: var(--text-fs-22);
+  line-height: 34px;
+  font-family: var(--secondary-ff);
+  font-weight: var(--regular-fw);
+  color: var(--secondary-fc);
+}
+
+.text-2-semi-bold {
+  font-size: var(--text-fs-22);
+  line-height: 34px;
+  font-family: var(--secondary-ff);
+  font-weight: var(--semi-bold-fw);
+  color: var(--secondary-fc);
+}
+.text-2-bold {
+  font-size: var(--text-fs-22);
+  line-height: 34px;
+  font-family: var(--secondary-ff);
+  font-weight: var(--bold-fw);
+  color: var(--secondary-fc);
+}
+
+.text-3-regular {
+  font-size: var(--text-fs-20);
+  line-height: 32px;
+  font-family: var(--secondary-ff);
+  font-weight: var(--regular-fw);
+  color: var(--secondary-fc);
+}
+
+.text-3-semi-bold {
+  font-size: var(--text-fs-20);
+  line-height: 32px;
+  font-family: var(--secondary-ff);
+  font-weight: var(--semi-bold-fw);
+  color: var(--secondary-fc);
+}
+
+.text-3-bold {
+  font-size: var(--text-fs-20);
+  line-height: 32px;
+  font-family: var(--secondary-ff);
+  font-weight: var(--bold-fw);
+  color: var(--secondary-fc);
+}
+
+.text-4-regular {
+  font-size: var(--text-fs-18);
+  line-height: 30px;
+  font-family: var(--secondary-ff);
+  font-weight: var(--regular-fw);
+  color: var(--secondary-fc);
+}
+
+.text-4-semi-bold {
+  font-size: var(--text-fs-18);
+  line-height: 30px;
+  font-family: var(--secondary-ff);
+  font-weight: var(--semi-bold-fw);
+  color: var(--secondary-fc);
+}
+
+.text-4-bold {
+  font-size: var(--text-fs-18);
+  line-height: 30px;
+  font-family: var(--secondary-ff);
+  font-weight: var(--bold-fw);
+  color: var(--secondary-fc);
+}
+
+.text-5-regular {
+  font-size: var(--text-fs-16);
+  line-height: 26px;
+  font-family: var(--secondary-ff);
+  font-weight: var(--regular-fw);
+  color: var(--secondary-fc);
+}
+
+.text-5-semi-bold {
+  font-size: var(--text-fs-16);
+  line-height: 26px;
+  font-family: var(--secondary-ff);
+  font-weight: var(--semi-bold-fw);
+  color: var(--secondary-fc);
+}
+
+.text-5-bold {
+  font-size: var(--text-fs-16);
+  line-height: 26px;
+  font-family: var(--secondary-ff);
+  font-weight: var(--bold-fw);
+  color: var(--secondary-fc);
+}
+
+.text-6-regular {
+  font-size: var(--text-fs-14);
+  line-height: 22px;
+  font-family: var(--secondary-ff);
+  font-weight: var(--regular-fw);
+  color: var(--secondary-fc);
+}
+
+.text-6-semi-bold {
+  font-size: var(--text-fs-14);
+  line-height: 22px;
+  font-family: var(--secondary-ff);
+  font-weight: var(--semi-bold-fw);
+  color: var(--secondary-fc);
+}
+
+.text-6-bold {
+  font-size: var(--text-fs-14);
+  line-height: 22px;
+  font-family: var(--secondary-ff);
+  font-weight: var(--bold-fw);
+  color: var(--secondary-fc);
+}
+
+.text-7-regular {
+  font-size: var(--text-fs-12);
+  line-height: 20px;
+  font-family: var(--secondary-ff);
+  font-weight: var(--regular-fw);
+  color: var(--secondary-fc);
+}
+
+.text-7-semi-bold {
+  font-size: var(--text-fs-12);
+  line-height: 20px;
+  font-family: var(--secondary-ff);
+  font-weight: var(--semi-bold-fw);
+  color: var(--secondary-fc);
+}
+
+.text-7-bold {
+  font-size: var(--text-fs-12);
+  line-height: 20px;
+  font-family: var(--secondary-ff);
+  font-weight: var(--bold-fw);
+  color: var(--secondary-fc);
+}
