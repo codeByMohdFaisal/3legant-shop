@@ -5,9 +5,9 @@
   width: 100%;
   color: white;
   background-color: #141718;
-  font-size: 16px;
+  font-size: var(--text-fs-16);
   font-family: var(--secondary-ff);
-  font-weight: 400;
+  font-weight: var(--normal-fw);
   line-height: 26px;
   cursor: pointer;
 }
@@ -16,7 +16,7 @@
   align-items: center;
   gap: 5px;
   width: fit-content;
-  font-size: 14px;
+  font-size: var(--text-fs-14);
   font-family: var(--secondary-ff);
   font-weight: var(--medium-fw);
   line-height: 24px;
