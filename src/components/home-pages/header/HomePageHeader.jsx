@@ -16,7 +16,9 @@ const HomePageHeader = ({ bgColor, textColor, ntfText }) => {
         <p style={{ color: textColor }} className="ntf-text text-14-semi-bold">
           {ntfText}
         </p>
-        <SecondaryBtn btnText={"Shop Now"} arrowColor={"#377DFF"} />
+        <div className="secondary-btn-div">
+          <SecondaryBtn btnText={"Shop Now"} arrowColor={"#377DFF"} />
+        </div>
       </div>
       <div className="ntf-cross-icon-div">
         <svg

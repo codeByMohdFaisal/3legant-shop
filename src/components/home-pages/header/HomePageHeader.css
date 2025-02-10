@@ -16,3 +16,8 @@
   top: 6px;
   right: 10px;
 }
+@media (max-width: 1200px) {
+  .secondary-btn-div {
+    display: none;
+  }
+}

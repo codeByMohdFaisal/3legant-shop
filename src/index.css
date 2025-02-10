@@ -130,7 +130,7 @@ ul {
   font-size: var(--text-fs-26);
   line-height: 40px;
   font-family: var(--secondary-ff);
-  font-weight: var(--regular-fw);
+  font-weight: var(--normal-fw);
   color: var(--secondary-fc);
 }
 .text-26-semi-bold {
@@ -153,7 +153,7 @@ ul {
   font-size: var(--text-fs-22);
   line-height: 34px;
   font-family: var(--secondary-ff);
-  font-weight: var(--regular-fw);
+  font-weight: var(--normal-fw);
   color: var(--secondary-fc);
 }
 
@@ -176,7 +176,7 @@ ul {
   font-size: var(--text-fs-20);
   line-height: 32px;
   font-family: var(--secondary-ff);
-  font-weight: var(--regular-fw);
+  font-weight: var(--normal-fw);
   color: var(--secondary-fc);
 }
 
@@ -200,7 +200,7 @@ ul {
   font-size: var(--text-fs-18);
   line-height: 30px;
   font-family: var(--secondary-ff);
-  font-weight: var(--regular-fw);
+  font-weight: var(--normal-fw);
   color: var(--secondary-fc);
 }
 
@@ -224,7 +224,7 @@ ul {
   font-size: var(--text-fs-16);
   line-height: 26px;
   font-family: var(--secondary-ff);
-  font-weight: var(--regular-fw);
+  font-weight: var(--normal-fw);
   color: var(--secondary-fc);
 }
 
@@ -248,7 +248,7 @@ ul {
   font-size: var(--text-fs-14);
   line-height: 22px;
   font-family: var(--secondary-ff);
-  font-weight: var(--regular-fw);
+  font-weight: var(--normal-fw);
   color: var(--secondary-fc);
 }
 
@@ -272,7 +272,7 @@ ul {
   font-size: var(--text-fs-12);
   line-height: 20px;
   font-family: var(--secondary-ff);
-  font-weight: var(--regular-fw);
+  font-weight: var(--normal-fw);
   color: var(--secondary-fc);
 }
 
@@ -290,4 +290,30 @@ ul {
   font-family: var(--secondary-ff);
   font-weight: var(--bold-fw);
   color: var(--secondary-fc);
+}
+
+@media (max-width: 1200px) {
+  .heading-72 {
+    font-size: var(--heading-fs-40);
+    line-height: 44px;
+  }
+  .text-18-regular {
+    font-size: var(--text-fs-16);
+    line-height: 26px;
+    font-weight: var(--semi-bold-fw);
+  }
+  .heading-40 {
+    font-size: var(--heading-fs-28);
+    line-height: 34px;
+  }
+  .heading-20 {
+    font-size: var(--heading-fs-16);
+    line-height: 24px;
+    font-family: var(--secondary-ff);
+  }
+  .text-14-regular {
+    font-size: var(--text-fs-12);
+    line-height: 20px;
+    font-weight: var(--normal-fw);
+  }
 }

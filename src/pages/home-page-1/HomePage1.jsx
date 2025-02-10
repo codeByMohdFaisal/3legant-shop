@@ -4,6 +4,7 @@ import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
 import "@coreui/coreui/dist/css/coreui.min.css";
 import HomePageHeader from "../../components/home-pages/header/HomePageHeader";
 import companyLogo from "../../assets/images/company-logo.png";
+import mobMenuIcon from "../../assets/images/mob-menu.svg";
 import companyWhiteLogo from "../../assets/images/white-logo.svg";
 import searchIcon from "../../assets/images/search 02.png";
 import profileIcon from "../../assets/images/user-circle.png";
@@ -45,7 +46,11 @@ const HomePage1 = () => {
       />
       <div className="home-page-container">
         <div className="home-page-top-section">
-          <img src={companyLogo} alt="company-logo" />
+          <div className="mob-menu-parent">
+            <img className="mob-menu-icon" src={mobMenuIcon} alt="mob-menu" />
+            <img src={companyLogo} alt="company-logo" />
+          </div>
+
           <nav className="home-page-nav">
             <ul className="navbar-parent">
               <li className="navbar-items selected-nav-items ">Home</li>
@@ -128,7 +133,12 @@ const HomePage1 = () => {
           <section className="new-arival-section">
             <div className="new-arival-title-section">
               <p className="new-arival-title heading-40">New Arrivals</p>
-              <SecondaryBtn btnText={"More products"} arrowColor={"#121212"} />
+              <div className="web-secondary-btn">
+                <SecondaryBtn
+                  btnText={"More products"}
+                  arrowColor={"#121212"}
+                />
+              </div>
             </div>
             <div className="new-arival-product-list-div">
               <div className="new-arival-product-card-parent">
@@ -273,6 +283,9 @@ const HomePage1 = () => {
                 </div>
               </div>
             </div>
+            <div className="mob-secondary-btn">
+              <SecondaryBtn btnText={"More products"} arrowColor={"#121212"} />
+            </div>
           </section>
         </div>
       </div>
@@ -336,7 +349,7 @@ const HomePage1 = () => {
         <div className="banner-img-div">
           <img src={bannerSofa} alt="banner-ad" />
         </div>
-        <div>
+        <div className="banner-desc-parent-div">
           <div className="banner-desc-div">
             <p className="banner-sale heading-20">SALE UP TO 35% OFF</p>
             <p className="banner-title heading-40">

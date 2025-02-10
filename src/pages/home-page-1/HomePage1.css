@@ -93,13 +93,12 @@ p {
   grid-template-columns: 1fr 1fr;
   gap: 24px;
   width: 100%;
-  height: 664px;
 }
 .left-product-div {
-  height: 100%;
+  height: 664px;
 }
 .right-product-div {
-  height: 100%;
+  height: 664px;
   display: grid;
   gap: 24px;
   grid-auto-flow: row;
@@ -195,7 +194,7 @@ p {
   margin-block: 48px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  column-gap: 24px;
+  gap: 24px;
 }
 .feature-card-inside-div {
   padding: 48px 32px;
@@ -226,6 +225,11 @@ p {
   width: 62%;
   padding-left: 72px;
 }
+.banner-desc-parent-div {
+  background: #f3f5f7;
+  padding-block: 58px;
+  height: 100%;
+}
 .banner-title {
   padding-block: 16px;
 }
@@ -242,7 +246,7 @@ p {
 .article-cards-parent {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 24px;
+  gap: 24px;
 }
 .contact-us-desc {
   padding-top: 101px;
@@ -372,4 +376,149 @@ p {
   display: flex;
   gap: 28px;
   align-items: center;
+}
+.mob-menu-icon {
+  display: none;
+}
+.mob-secondary-btn {
+  display: none;
+}
+@media (max-width: 1200px) {
+  .mob-menu-icon {
+    display: block;
+  }
+  .home-page-nav {
+    display: none;
+  }
+  .navbar-icon {
+    display: none;
+  }
+  .mob-menu-parent {
+    display: flex;
+    gap: 4px;
+  }
+  .home-page-container {
+    max-width: 311px;
+  }
+  .home-page-carousel {
+    height: 304px;
+  }
+  .carousel-img {
+    height: 304px;
+  }
+  .carousel-content-div {
+    gap: 16px;
+    flex-direction: column;
+  }
+
+  .home-page-products-section {
+    gap: 16px;
+    grid-template-columns: 1fr;
+  }
+  .left-product-div {
+    height: 377px;
+  }
+  .right-product-div {
+    height: 377px;
+    gap: 16px;
+  }
+  .left-product-div {
+    padding-left: 32px;
+    padding-top: 32px;
+  }
+  .right-product-sub-div1,
+  .right-product-sub-div2 {
+    padding-left: 32px;
+    padding-top: 82px;
+  }
+  .web-secondary-btn {
+    display: none;
+  }
+  .mob-secondary-btn {
+    display: block;
+    padding-top: 40px;
+    padding-bottom: 32px;
+  }
+  .new-arival-product-card {
+    height: 392px;
+    width: 231px;
+  }
+  .new-arival-product-list-div {
+    gap: 16px;
+  }
+  .parent-features-div {
+    margin-block: 32px;
+    gap: 8px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .feature-card-inside-div {
+    padding: 32px 16px;
+  }
+  .banner-ad-section {
+    grid-template-columns: 1fr;
+  }
+  .banner-desc-div {
+    width: 100%;
+    max-width: 311px;
+    margin-inline: auto;
+    padding-left: 0px;
+  }
+  .banner-desc-parent-div {
+    padding-block: 58px;
+  }
+  .article-section {
+    padding-block: 0px;
+  }
+  .article-cards-parent {
+    grid-template-columns: 1fr;
+  }
+  .article-cards-parent {
+    width: 100%;
+    padding-bottom: 40px;
+  }
+  .article-card {
+    width: 100%;
+  }
+  .article-card-img {
+    width: 311px;
+  }
+  .contact-us-desc {
+    padding-block: 95px;
+    max-width: 311px;
+    width: 100%;
+    margin-inline: auto;
+  }
+  .ad-desc {
+    font-size: var(--text-fs-14);
+    font-weight: var(--normal-fw);
+    line-height: 22px;
+    font-family: var(--secondary-ff);
+  }
+  .hp-footer-menu {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .hp-footer-menu-left-div {
+    flex-direction: column;
+  }
+  .hp-footer-menu-right-div {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .hp-footer-center-line {
+    width: 24px;
+    background: #fff;
+    height: 1px;
+    margin: auto;
+  }
+  .hp-copyright-div {
+    gap: 32px;
+    flex-direction: column-reverse;
+  }
+  .hp-copyright-left-div {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
 }
