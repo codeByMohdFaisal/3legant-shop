@@ -225,10 +225,9 @@ p {
   width: 62%;
   padding-left: 72px;
 }
-.banner-desc-parent-div {
+
+.banner-ad-section {
   background: #f3f5f7;
-  padding-block: 58px;
-  height: 100%;
 }
 .banner-title {
   padding-block: 16px;
@@ -463,7 +462,7 @@ p {
     margin-inline: auto;
     padding-left: 0px;
   }
-  .banner-desc-parent-div {
+  .banner-desc-div {
     padding-block: 58px;
   }
   .article-section {

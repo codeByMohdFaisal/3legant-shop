@@ -349,18 +349,16 @@ const HomePage1 = () => {
         <div className="banner-img-div">
           <img src={bannerSofa} alt="banner-ad" />
         </div>
-        <div className="banner-desc-parent-div">
-          <div className="banner-desc-div">
-            <p className="banner-sale heading-20">SALE UP TO 35% OFF</p>
-            <p className="banner-title heading-40">
-              HUNDREDS of New lower prices!
-            </p>
-            <p className="banner-description text-18-regular">
-              It’s more affordable than ever to give every room in your home a
-              stylish makeover
-            </p>
-            <SecondaryBtn btnText="Shop Now" arrowColor="#141718" />
-          </div>
+        <div className="banner-desc-div">
+          <p className="banner-sale heading-20">SALE UP TO 35% OFF</p>
+          <p className="banner-title heading-40">
+            HUNDREDS of New lower prices!
+          </p>
+          <p className="banner-description text-18-regular">
+            It’s more affordable than ever to give every room in your home a
+            stylish makeover
+          </p>
+          <SecondaryBtn btnText="Shop Now" arrowColor="#141718" />
         </div>
       </section>
       <section className="article-section">
