@@ -129,166 +129,156 @@ const HomePage1 = () => {
             </div>
           </div>
         </section>
-        <div className="home-page-container">
-          <section className="new-arival-section">
-            <div className="new-arival-title-section">
-              <p className="new-arival-title heading-40">New Arrivals</p>
-              <div className="web-secondary-btn">
-                <SecondaryBtn
-                  btnText={"More products"}
-                  arrowColor={"#121212"}
-                />
-              </div>
-            </div>
-            <div className="new-arival-product-list-div">
-              <div className="new-arival-product-card-parent">
-                <div
-                  className="new-arival-product-card common-centered-img-properties"
-                  style={{
-                    backgroundImage: `url(${cardImg1})`,
-                  }}
-                >
-                  <div className="card-header">
-                    <img src={newTag} alt="50% off" />
-                    <img src={wishlistIcon} alt="wishlist-icon" />
-                  </div>
-                  <div className="card-btn-div">
-                    <AuthenticationBtn text={"Add to cart"} />
-                  </div>
-                </div>
-                <div className="product-description-div">
-                  <img src={ratings} alt="ratings" className="ratings-img" />
-                  <p className="product-name text-16-semi-bold">
-                    Loveseat Sofa
-                  </p>
-                  <div className="product-pricing-div">
-                    <p className="actual-product-pricing text-16-semi-bold">
-                      $199.00
-                    </p>
-                    <p className="old-product-pricing text-16-regular">
-                      $400.00
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="new-arival-product-card-parent">
-                <div
-                  className="new-arival-product-card common-centered-img-properties"
-                  style={{
-                    backgroundImage: `url(${cardImg2})`,
-                  }}
-                >
-                  <div className="card-header">
-                    <img src={newTag} alt="new tag" />
-                  </div>
-                </div>
-                <div className="product-description-div">
-                  <img src={ratings} alt="ratings" className="ratings-img" />
-                  <p className="product-name text-16-semi-bold">Table Lamp</p>
-                  <div className="product-pricing-div">
-                    <p className="actual-product-pricing text-16-semi-bold">
-                      $24.99
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="new-arival-product-card-parent">
-                <div
-                  className="new-arival-product-card common-centered-img-properties"
-                  style={{
-                    backgroundImage: `url(${cardImg3})`,
-                  }}
-                >
-                  <div className="card-header">
-                    <img src={newTag} alt="new tag" />
-                  </div>
-                </div>
-                <div className="product-description-div">
-                  <img src={ratings} alt="ratings" className="ratings-img" />
-                  <p className="product-name text-16-semi-bold">
-                    Beige Table Lamp
-                  </p>
-                  <div className="product-pricing-div">
-                    <p className="actual-product-pricing text-16-semi-bold">
-                      $24.99
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="new-arival-product-card-parent">
-                <div
-                  className="new-arival-product-card common-centered-img-properties"
-                  style={{
-                    backgroundImage: `url(${cardImg4})`,
-                  }}
-                >
-                  <div className="card-header">
-                    <img src={newTag} alt="new tag" />
-                  </div>
-                </div>
-                <div className="product-description-div">
-                  <img src={ratings} alt="ratings" className="ratings-img" />
-                  <p className="product-name text-16-semi-bold">
-                    Bamboo basket
-                  </p>
-                  <div className="product-pricing-div">
-                    <p className="actual-product-pricing text-16-semi-bold">
-                      $24.99
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="new-arival-product-card-parent">
-                <div
-                  className="new-arival-product-card common-centered-img-properties"
-                  style={{
-                    backgroundImage: `url(${cardImg2})`,
-                  }}
-                >
-                  <div className="card-header">
-                    <img src={newTag} alt="new tag" />
-                  </div>
-                </div>
-                <div className="product-description-div">
-                  <img src={ratings} alt="ratings" className="ratings-img" />
-                  <p className="product-name text-16-semi-bold">Table Lamp</p>
-                  <div className="product-pricing-div">
-                    <p className="actual-product-pricing text-16-semi-bold">
-                      $24.99
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="new-arival-product-card-parent">
-                <div
-                  className="new-arival-product-card common-centered-img-properties"
-                  style={{
-                    backgroundImage: `url(${cardImg4})`,
-                  }}
-                >
-                  <div className="card-header">
-                    <img src={newTag} alt="new tag" />
-                  </div>
-                </div>
-                <div className="product-description-div">
-                  <img src={ratings} alt="ratings" className="ratings-img" />
-                  <p className="product-name text-16-semi-bold">
-                    Bamboo basket
-                  </p>
-                  <div className="product-pricing-div">
-                    <p className="actual-product-pricing text-16-semi-bold">
-                      $24.99
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="mob-secondary-btn">
+      </div>
+      <div className="home-page-container">
+        <section className="new-arival-section">
+          <div className="new-arival-title-section">
+            <p className="new-arival-title heading-40">New Arrivals</p>
+            <div className="web-secondary-btn">
               <SecondaryBtn btnText={"More products"} arrowColor={"#121212"} />
             </div>
-          </section>
-        </div>
+          </div>
+          <div className="new-arival-product-list-div">
+            <div className="new-arival-product-card-parent">
+              <div
+                className="new-arival-product-card common-centered-img-properties"
+                style={{
+                  backgroundImage: `url(${cardImg1})`,
+                }}
+              >
+                <div className="card-header">
+                  <img src={newTag} alt="50% off" />
+                  <img src={wishlistIcon} alt="wishlist-icon" />
+                </div>
+                <div className="card-btn-div">
+                  <AuthenticationBtn text={"Add to cart"} />
+                </div>
+              </div>
+              <div className="product-description-div">
+                <img src={ratings} alt="ratings" className="ratings-img" />
+                <p className="product-name text-16-semi-bold">Loveseat Sofa</p>
+                <div className="product-pricing-div">
+                  <p className="actual-product-pricing text-16-semi-bold">
+                    $199.00
+                  </p>
+                  <p className="old-product-pricing text-16-regular">$400.00</p>
+                </div>
+              </div>
+            </div>
+            <div className="new-arival-product-card-parent">
+              <div
+                className="new-arival-product-card common-centered-img-properties"
+                style={{
+                  backgroundImage: `url(${cardImg2})`,
+                }}
+              >
+                <div className="card-header">
+                  <img src={newTag} alt="new tag" />
+                </div>
+              </div>
+              <div className="product-description-div">
+                <img src={ratings} alt="ratings" className="ratings-img" />
+                <p className="product-name text-16-semi-bold">Table Lamp</p>
+                <div className="product-pricing-div">
+                  <p className="actual-product-pricing text-16-semi-bold">
+                    $24.99
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="new-arival-product-card-parent">
+              <div
+                className="new-arival-product-card common-centered-img-properties"
+                style={{
+                  backgroundImage: `url(${cardImg3})`,
+                }}
+              >
+                <div className="card-header">
+                  <img src={newTag} alt="new tag" />
+                </div>
+              </div>
+              <div className="product-description-div">
+                <img src={ratings} alt="ratings" className="ratings-img" />
+                <p className="product-name text-16-semi-bold">
+                  Beige Table Lamp
+                </p>
+                <div className="product-pricing-div">
+                  <p className="actual-product-pricing text-16-semi-bold">
+                    $24.99
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="new-arival-product-card-parent">
+              <div
+                className="new-arival-product-card common-centered-img-properties"
+                style={{
+                  backgroundImage: `url(${cardImg4})`,
+                }}
+              >
+                <div className="card-header">
+                  <img src={newTag} alt="new tag" />
+                </div>
+              </div>
+              <div className="product-description-div">
+                <img src={ratings} alt="ratings" className="ratings-img" />
+                <p className="product-name text-16-semi-bold">Bamboo basket</p>
+                <div className="product-pricing-div">
+                  <p className="actual-product-pricing text-16-semi-bold">
+                    $24.99
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="new-arival-product-card-parent">
+              <div
+                className="new-arival-product-card common-centered-img-properties"
+                style={{
+                  backgroundImage: `url(${cardImg2})`,
+                }}
+              >
+                <div className="card-header">
+                  <img src={newTag} alt="new tag" />
+                </div>
+              </div>
+              <div className="product-description-div">
+                <img src={ratings} alt="ratings" className="ratings-img" />
+                <p className="product-name text-16-semi-bold">Table Lamp</p>
+                <div className="product-pricing-div">
+                  <p className="actual-product-pricing text-16-semi-bold">
+                    $24.99
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="new-arival-product-card-parent">
+              <div
+                className="new-arival-product-card common-centered-img-properties"
+                style={{
+                  backgroundImage: `url(${cardImg4})`,
+                }}
+              >
+                <div className="card-header">
+                  <img src={newTag} alt="new tag" />
+                </div>
+              </div>
+              <div className="product-description-div">
+                <img src={ratings} alt="ratings" className="ratings-img" />
+                <p className="product-name text-16-semi-bold">Bamboo basket</p>
+                <div className="product-pricing-div">
+                  <p className="actual-product-pricing text-16-semi-bold">
+                    $24.99
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="mob-secondary-btn">
+            <SecondaryBtn btnText={"More products"} arrowColor={"#121212"} />
+          </div>
+        </section>
       </div>
+
       <section className="features-section">
         <div className="home-page-container parent-features-div">
           <div className="feature-card">
