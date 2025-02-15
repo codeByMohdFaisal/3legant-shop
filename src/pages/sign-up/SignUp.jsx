@@ -1,6 +1,7 @@
 import React from "react";
 import "./sign-up.css";
-import signInChairImg from "../../assets/images/chair.png";
+import webChairImg from "../../assets/images/web-sign-in-chair.png";
+import mobChairImg from "../../assets/images/mob-sign-in-chair.png";
 import AuthenticationBtn from "../../components/buttons/AuthenticationBtn";
 import companyLogo from "../../assets/images/company-logo.png";
 import { useState } from "react";
@@ -25,12 +26,25 @@ const SignUp = () => {
   return (
     <div className="signup-div">
       <div className="signup-left-div">
+        <div className="signup-left-img-div">
+          <img
+            className="signup-left-div-img web-sign-img"
+            src={webChairImg}
+            alt="chair"
+          />
+          <img
+            className="signup-left-div-img mob-sign-img"
+            src={mobChairImg}
+            alt="chair"
+          />
+        </div>
+
         <div className="logo-div">
           <img src={companyLogo} alt="company-logo" />
         </div>
       </div>
       <div className="signup-right-div">
-        <div className="signup-right-container">
+        <div className="signup-right-div-parent">
           <h4 className="signup-title">Sign up</h4>
           <p className="signup-text">
             Already have an account?{" "}
@@ -43,15 +57,8 @@ const SignUp = () => {
                 type="text"
                 value={nameVal}
                 onChange={handleName}
+                placeholder="Your name"
               />
-              <p
-                className="sign-up-label "
-                style={{
-                  display: nameVal && "none",
-                }}
-              >
-                Your name
-              </p>
             </div>
             <div className="signup-input-div">
               <input
@@ -59,15 +66,8 @@ const SignUp = () => {
                 type="text"
                 value={usernameVal}
                 onChange={handleUsername}
+                placeholder="Username"
               />
-              <p
-                className="sign-up-label "
-                style={{
-                  display: usernameVal && "none",
-                }}
-              >
-                Username
-              </p>
             </div>
             <div className="signup-input-div">
               <input
@@ -75,15 +75,8 @@ const SignUp = () => {
                 type="email"
                 value={emailVal}
                 onChange={handleEmail}
+                placeholder="Email address"
               />
-              <p
-                className="sign-up-label"
-                style={{
-                  display: emailVal && "none",
-                }}
-              >
-                Email address
-              </p>
             </div>
             <div className="signup-input-div password-field">
               <input
@@ -91,15 +84,9 @@ const SignUp = () => {
                 type="password"
                 value={passwordVal}
                 onChange={handlePassword}
+                placeholder="Password"
               />
-              <p
-                className="sign-up-label"
-                style={{
-                  display: passwordVal && "none",
-                }}
-              >
-                Password
-              </p>
+
               <svg
                 width="24"
                 height="24"
