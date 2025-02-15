@@ -62,10 +62,12 @@
 
 .left-carousel-content {
   color: #141718;
+  margin-bottom: 0px;
 }
 
 .right-carousel-content {
   color: #6c7275;
+  margin-bottom: 0px;
 }
 
 .carousel-content-left-span {
@@ -105,7 +107,8 @@
   grid-template-rows: 1fr 1fr;
 }
 .product-heading {
-  margin-bottom: 12px !important;
+  padding-bottom: 12px;
+  margin-bottom: 0px;
 }
 
 .left-product-div {
@@ -121,6 +124,9 @@
   padding-block: 40px;
   display: flex;
   justify-content: space-between;
+}
+.new-arival-title {
+  margin-bottom: 0px;
 }
 .new-arival-product-card {
   height: 349px;
