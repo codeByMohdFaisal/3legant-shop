@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import "./HomePage1.css";
 import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
 import "@coreui/coreui/dist/css/coreui.min.css";
@@ -39,12 +39,20 @@ import CartModal from "../../components/modal/cart-modal/CartModal";
 import OutsideClickHandler from "react-outside-click-handler";
 
 const HomePage1 = () => {
+  const targetFadedBgRef = useRef(null);
+
   const [openCartModal, setOpenCartModal] = useState(false);
-  const handleCartModal = (e) => {
-    setOpenCartModal(!openCartModal);
+  const handleCartModal = (e, val) => {
+    setOpenCartModal(val);
+    if (val) {
+      targetFadedBgRef?.current?.classList.add("faded-bg-for-modal");
+    } else {
+      targetFadedBgRef?.current?.classList.remove("faded-bg-for-modal");
+    }
   };
   return (
     <div
+      ref={targetFadedBgRef}
       style={{
         position: "relative",
       }}
@@ -76,7 +84,7 @@ const HomePage1 = () => {
               className="cart-icon"
               src={cartIcon}
               alt="cart-icon"
-              onClick={(e) => handleCartModal(e)}
+              onClick={(e) => handleCartModal(e, !openCartModal)}
             />
           </div>
         </div>
