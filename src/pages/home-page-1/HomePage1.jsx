@@ -477,7 +477,12 @@ const HomePage1 = () => {
           </div>
         </div>
       </footer>
-      <OutsideClickHandler onOutsideClick={() => setOpenCartModal(false)}>
+      <OutsideClickHandler
+        onOutsideClick={() => {
+          setOpenCartModal(false);
+          targetFadedBgRef?.current?.classList.remove("faded-bg-for-modal");
+        }}
+      >
         <CartModal openCartModal={openCartModal} />
       </OutsideClickHandler>
     </div>
