@@ -175,3 +175,9 @@
   width: fit-content;
   margin-inline: auto;
 }
+
+@media (max-width: 500px) {
+  .cart-modal-main {
+    width: 343px;
+  }
+}
