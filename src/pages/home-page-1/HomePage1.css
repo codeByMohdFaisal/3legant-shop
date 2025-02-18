@@ -22,10 +22,12 @@
   align-items: center;
 }
 .navbar-icon {
+  cursor: pointer;
   height: 24px;
   width: 24px;
 }
 .cart-icon {
+  cursor: pointer;
   width: 50px;
   height: 28px;
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./HomePage1.css";
 import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
 import "@coreui/coreui/dist/css/coreui.min.css";
@@ -35,10 +35,20 @@ import facebook from "../../assets/images/facebook.svg";
 import youTube from "../../assets/images/youtube.svg";
 import SecondaryBtn from "../../components/buttons/SecondaryBtn";
 import AuthenticationBtn from "../../components/buttons/AuthenticationBtn";
+import CartModal from "../../components/modal/cart-modal/CartModal";
+import OutsideClickHandler from "react-outside-click-handler";
 
 const HomePage1 = () => {
+  const [openCartModal, setOpenCartModal] = useState(false);
+  const handleCartModal = (e) => {
+    setOpenCartModal(!openCartModal);
+  };
   return (
-    <div>
+    <div
+      style={{
+        position: "relative",
+      }}
+    >
       <HomePageHeader
         bgColor={"#F3F5F7"}
         textColor={"#343839"}
@@ -62,7 +72,12 @@ const HomePage1 = () => {
           <div className="navbar-icons">
             <img className="navbar-icon" src={searchIcon} alt="search-icon" />
             <img className="navbar-icon" src={profileIcon} alt="profile-icon" />
-            <img className="cart-icon" src={cartIcon} alt="cart-icon" />
+            <img
+              className="cart-icon"
+              src={cartIcon}
+              alt="cart-icon"
+              onClick={(e) => handleCartModal(e)}
+            />
           </div>
         </div>
       </div>
@@ -454,6 +469,9 @@ const HomePage1 = () => {
           </div>
         </div>
       </footer>
+      <OutsideClickHandler onOutsideClick={() => setOpenCartModal(false)}>
+        <CartModal openCartModal={openCartModal} />
+      </OutsideClickHandler>
     </div>
   );
 };
