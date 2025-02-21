@@ -39,7 +39,14 @@
   font-size: var(--text-fs-14);
   line-height: 24px;
   font-family: var(--secondary-ff);
+  text-decoration: none;
+  transition: 0.5s;
 }
+
+.navbar-items:hover {
+  color: #121212;
+}
+
 .ntf-text {
   margin-bottom: 0px;
 }

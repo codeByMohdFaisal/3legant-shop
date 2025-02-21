@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import "./HomePage.css";
 import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
 import "@coreui/coreui/dist/css/coreui.min.css";
@@ -24,8 +24,6 @@ import articleImg2 from "../../assets/images/article-2.png";
 import articleImg3 from "../../assets/images/article-3.png";
 import SecondaryBtn from "../../components/buttons/SecondaryBtn";
 import AuthenticationBtn from "../../components/buttons/AuthenticationBtn";
-import CartModal from "../../components/modal/cart-modal/CartModal";
-import OutsideClickHandler from "react-outside-click-handler";
 import NavigationMenu from "../../components/home-pages/navigation-menu/NavigationMenu";
 import Footer from "../../components/home-pages/footer/Footer";
 import ContactUs from "../../layouts/contact-us/ContactUs";
@@ -33,15 +31,6 @@ import ContactUs from "../../layouts/contact-us/ContactUs";
 const HomePage = () => {
   const targetFadedBgRef = useRef(null);
 
-  const [openCartModal, setOpenCartModal] = useState(false);
-  const handleCartModal = (e, val) => {
-    setOpenCartModal(val);
-    if (val) {
-      targetFadedBgRef?.current?.classList.add("faded-bg-for-modal");
-    } else {
-      targetFadedBgRef?.current?.classList.remove("faded-bg-for-modal");
-    }
-  };
   return (
     <div
       ref={targetFadedBgRef}
@@ -55,10 +44,7 @@ const HomePage = () => {
         ntfText={"30% off storewide — Limited time!"}
       />
       <div className="home-page-container">
-        <NavigationMenu
-          handleCartModal={handleCartModal}
-          openCartModal={openCartModal}
-        />
+        <NavigationMenu targetFadedBgRef={targetFadedBgRef} />
       </div>
       <div className="home-page-container">
         <div className="home-page-carousel">
@@ -390,14 +376,6 @@ const HomePage = () => {
       </section>
       <ContactUs />
       <Footer />
-      <OutsideClickHandler
-        onOutsideClick={() => {
-          setOpenCartModal(false);
-          targetFadedBgRef?.current?.classList.remove("faded-bg-for-modal");
-        }}
-      >
-        <CartModal openCartModal={openCartModal} />
-      </OutsideClickHandler>
     </div>
   );
 };
