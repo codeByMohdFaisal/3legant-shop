@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import signInChairImg from "../../assets/images/chair.png";
+import webChairImg from "../../assets/images/web-sign-in-chair.png";
+import mobChairImg from "../../assets/images/mob-sign-in-chair.png";
 import AuthenticationBtn from "../../components/buttons/AuthenticationBtn";
 import companyLogo from "../../assets/images/company-logo.png";
 
@@ -15,12 +16,25 @@ const SignIn = () => {
   return (
     <div className="signup-div">
       <div className="signup-left-div">
+        <div className="signup-left-img-div">
+          <img
+            className="signup-left-div-img web-sign-img"
+            src={webChairImg}
+            alt="chair"
+          />
+          <img
+            className="signup-left-div-img mob-sign-img"
+            src={mobChairImg}
+            alt="chair"
+          />
+        </div>
+
         <div className="logo-div">
           <img src={companyLogo} alt="company-logo" />
         </div>
       </div>
       <div className="signup-right-div">
-        <div className="signup-right-container">
+        <div className="signup-right-div-parent">
           <h4 className="signup-title">Sign in</h4>
           <p className="signup-text">
             Don’t have an accout yet?{" "}
@@ -33,15 +47,8 @@ const SignIn = () => {
                 type="text"
                 value={emailVal}
                 onChange={handleEmail}
+                placeholder="Your username or email address"
               />
-              <p
-                className="sign-up-label"
-                style={{
-                  display: emailVal && "none",
-                }}
-              >
-                Your username or email address
-              </p>
             </div>
 
             <div className="signup-input-div password-field">
@@ -50,15 +57,9 @@ const SignIn = () => {
                 type="password"
                 value={passwordVal}
                 onChange={handlePassword}
+                placeholder="Password"
               />
-              <p
-                className="sign-up-label"
-                style={{
-                  display: passwordVal && "none",
-                }}
-              >
-                Password
-              </p>
+
               <svg
                 width="24"
                 height="24"
@@ -78,15 +79,16 @@ const SignIn = () => {
                 />
               </svg>
             </div>
-          </div>
-          <div className="remember-me-fg-pswrd-div">
-            <input className="signu-checkbox" type="checkbox" />
-            <div className="rm-pswrd-parent-div">
-              <p className="remember-me">Remember me</p>
-              <p className="forget-password">Forgot password?</p>
+
+            <div className="remember-me-fg-pswrd-div">
+              <input className="signu-checkbox" type="checkbox" />
+              <div className="rm-pswrd-parent-div">
+                <p className="remember-me">Remember me</p>
+                <p className="forget-password">Forgot password?</p>
+              </div>
             </div>
+            <AuthenticationBtn text={"Sign in"} />
           </div>
-          <AuthenticationBtn text={"Sign in"} />
         </div>
       </div>
     </div>

@@ -1,23 +1,22 @@
-:root {
-  --primary-ff: "Poppins", serif;
-  --secondary-ff: "Inter", serif;
-}
-
 .signup-div {
   display: flex;
-  align-items: center;
-  gap: 5.5rem;
+  height: 100vh;
 }
 
 .signup-left-div {
-  height: 100vh;
-  width: 49%;
+  width: 51%;
   position: relative;
-  background-image: url(/src/assets/images/chair.png);
-  background-size: contain;
   background-color: #f3f5f7;
-  background-repeat: no-repeat;
-  background-position: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signup-left-img-div {
+  width: 100%;
+}
+.signup-left-div-img {
+  width: 100%;
 }
 .logo-div {
   position: absolute;
@@ -29,14 +28,17 @@
   width: 100%;
   height: 100%;
 }
-
 .signup-right-div {
-  width: 30%;
+  width: 49%;
+  display: flex;
+  align-items: center;
+  padding-left: 5.5rem;
 }
 
-.signup-right-container {
-  width: 100%;
+.signup-right-div-parent {
+  width: 74%;
 }
+
 .signup-title {
   font-size: 40px;
   font-family: var(--primary-ff);
@@ -57,13 +59,6 @@
 .sign-in-text {
   color: #38cb89;
 }
-.sign-up-label {
-  font-size: 16px;
-  font-family: var(--secondary-ff);
-  font-weight: 400;
-  color: #6c7275;
-  line-height: 26px;
-}
 
 .signup-input-div {
   margin-bottom: 32px;
@@ -71,28 +66,12 @@
   position: relative;
 }
 
-.email-input:focus + .sign-up-label {
-  display: none;
-}
-.password-input:focus + .sign-up-label {
-  display: none;
-}
-.name-input:focus + .sign-up-label {
-  display: none;
-}
-.username-input:focus + .sign-up-label {
-  display: none;
-}
-
-.sign-up-label {
+.signup-input::placeholder {
   font-size: 16px;
   font-family: var(--primary-ff);
   font-weight: 400;
   color: #6c7275;
   line-height: 26px;
-  position: absolute;
-  top: 0;
-  pointer-events: none;
 }
 .signup-input {
   width: 100%;
@@ -122,6 +101,7 @@
   font-weight: 400;
   color: #6c7275;
   line-height: 26px;
+  margin-bottom: 0px;
 }
 .policy-div {
   display: flex;
@@ -146,6 +126,7 @@
   font-weight: 400;
   color: #6c7275;
   line-height: 26px;
+  margin-bottom: 0;
 }
 .forget-password {
   font-size: 16px;
@@ -153,6 +134,7 @@
   font-weight: 600;
   color: #121212;
   line-height: 26px;
+  margin-bottom: 0;
 }
 .rm-pswrd-parent-div {
   width: 100%;
@@ -161,24 +143,52 @@
   align-items: center;
 }
 
-@media screen and (max-width: 1200px) {
-  .signup-left-div {
-    height: 65vh;
+.mob-sign-img {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .signup-right-div-parent {
+    width: 95%;
+  }
+  .signup-right-div {
+    padding-left: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .web-sign-img {
+    display: none;
+  }
+  .mob-sign-img {
+    display: block;
+    height: 100%;
+  }
+  .signup-left-div-img {
+    width: unset;
+  }
+  .signup-left-img-div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .signup-div {
     flex-direction: column;
   }
   .signup-left-div {
     width: 100%;
+    height: 375px;
   }
   .signup-right-div {
     width: 100%;
+    padding-left: 0px;
   }
-  .signup-right-container {
+  .signup-right-div-parent {
     width: 83%;
-    padding: 0px;
-    margin: 0 auto;
-    padding-bottom: 30px;
+    margin-inline: auto;
+    padding-top: 40px;
   }
   .policy-text {
     font-weight: 200;
