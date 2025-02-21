@@ -6,16 +6,18 @@ import {
 } from "react-router-dom";
 import SignUp from "./pages/sign-up/SignUp";
 import SignIn from "./pages/sign-in/SignIn";
-import HomePage1 from "./pages/home-page-1/HomePage1";
+import HomePage from "./pages/home-page/HomePage";
+import ProductDetails from "./pages/products/ProductDetails";
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Navigate to={"/sign-in"} replace />} />
-        <Route path="/sign-in" element={<SignIn />} />
-        <Route path="/sign-up" element={<SignUp />} />
-        <Route path="/home-page-1" element={<HomePage1 />} />
+        <Route exact path="/sign-in" element={<SignIn />} />
+        <Route exact path="/sign-up" element={<SignUp />} />
+        <Route exact path="/home-page" element={<HomePage />} />
+        <Route exact path="/product-details" element={<ProductDetails />} />
       </Routes>
     </Router>
   );

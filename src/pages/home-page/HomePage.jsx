@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import "./HomePage1.css";
+import "./HomePage.css";
 import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
 import "@coreui/coreui/dist/css/coreui.min.css";
 import HomePageHeader from "../../components/home-pages/header/HomePageHeader";
@@ -38,7 +38,7 @@ import AuthenticationBtn from "../../components/buttons/AuthenticationBtn";
 import CartModal from "../../components/modal/cart-modal/CartModal";
 import OutsideClickHandler from "react-outside-click-handler";
 
-const HomePage1 = () => {
+const HomePage = () => {
   const targetFadedBgRef = useRef(null);
 
   const [openCartModal, setOpenCartModal] = useState(false);
@@ -489,4 +489,4 @@ const HomePage1 = () => {
   );
 };
 
-export default HomePage1;
+export default HomePage;
