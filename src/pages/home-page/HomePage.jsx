@@ -3,12 +3,6 @@ import "./HomePage.css";
 import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
 import "@coreui/coreui/dist/css/coreui.min.css";
 import HomePageHeader from "../../components/home-pages/header/HomePageHeader";
-import companyLogo from "../../assets/images/company-logo.png";
-import mobMenuIcon from "../../assets/images/mob-menu.svg";
-import companyWhiteLogo from "../../assets/images/white-logo.svg";
-import searchIcon from "../../assets/images/search 02.png";
-import profileIcon from "../../assets/images/user-circle.png";
-import cartIcon from "../../assets/images/Cart Button.png";
 import banner1 from "../../assets/images/carousel-slide-1.png";
 import banner2 from "../../assets/images/carousel-slide-2.jpg";
 import banner3 from "../../assets/images/carousel-slide-3.jpg";
@@ -28,15 +22,13 @@ import bannerSofa from "../../assets/images/banner-sofa.png";
 import articleImg1 from "../../assets/images/article-1.png";
 import articleImg2 from "../../assets/images/article-2.png";
 import articleImg3 from "../../assets/images/article-3.png";
-import contactUsImg from "../../assets/images/banner-img-2.png";
-import email from "../../assets/images/email.svg";
-import instagram from "../../assets/images/instagram.svg";
-import facebook from "../../assets/images/facebook.svg";
-import youTube from "../../assets/images/youtube.svg";
 import SecondaryBtn from "../../components/buttons/SecondaryBtn";
 import AuthenticationBtn from "../../components/buttons/AuthenticationBtn";
 import CartModal from "../../components/modal/cart-modal/CartModal";
 import OutsideClickHandler from "react-outside-click-handler";
+import NavigationMenu from "../../components/home-pages/navigation-menu/NavigationMenu";
+import Footer from "../../components/home-pages/footer/Footer";
+import ContactUs from "../../layouts/contact-us/ContactUs";
 
 const HomePage = () => {
   const targetFadedBgRef = useRef(null);
@@ -63,31 +55,10 @@ const HomePage = () => {
         ntfText={"30% off storewide — Limited time!"}
       />
       <div className="home-page-container">
-        <div className="home-page-top-section">
-          <div className="mob-menu-parent">
-            <img className="mob-menu-icon" src={mobMenuIcon} alt="mob-menu" />
-            <img src={companyLogo} alt="company-logo" />
-          </div>
-
-          <nav className="home-page-nav">
-            <ul className="navbar-parent">
-              <li className="navbar-items selected-nav-items ">Home</li>
-              <li className="navbar-items">Shop</li>
-              <li className="navbar-items">Product</li>
-              <li className="navbar-items">Contact Us</li>
-            </ul>
-          </nav>
-          <div className="navbar-icons">
-            <img className="navbar-icon" src={searchIcon} alt="search-icon" />
-            <img className="navbar-icon" src={profileIcon} alt="profile-icon" />
-            <img
-              className="cart-icon"
-              src={cartIcon}
-              alt="cart-icon"
-              onClick={(e) => handleCartModal(e, !openCartModal)}
-            />
-          </div>
-        </div>
+        <NavigationMenu
+          handleCartModal={handleCartModal}
+          openCartModal={openCartModal}
+        />
       </div>
       <div className="home-page-container">
         <div className="home-page-carousel">
@@ -417,66 +388,8 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      <section className="contact-us-section">
-        <div
-          className="contact-us-container common-centered-img-properties"
-          style={{
-            backgroundImage: `url(${contactUsImg})`,
-          }}
-        >
-          <div className="contact-us-desc">
-            <p className="ad-title heading-40">Join Our Newsletter</p>
-            <p className="ad-desc text-18-regular">
-              Sign up for deals, new products and promotions
-            </p>
-            <div className="cu-email-input-div">
-              <input className="cu-email-input" type="text" />
-              <div className="cu-sign-up-div">
-                <div className="email-img-div">
-                  <img src={email} alt="email" />
-
-                  <p className="input-text text-16-regular">Email address</p>
-                </div>
-                <p className="input-text cu-sign-up-text text-16-regular">
-                  Signup
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <footer className="home-page-footer">
-        <div className="home-page-container">
-          <div className="hp-footer-menu">
-            <div className="hp-footer-menu-left-div">
-              <img src={companyWhiteLogo} alt="company-logo" />
-              <div className="hp-footer-center-line"></div>
-              <p className="hp-footer-store-name">Gift & Decoration Store</p>
-            </div>
-            <ul className="hp-footer-menu-right-div">
-              <li className="hp-menu-li text-14-semi-bold">Home</li>
-              <li className="hp-menu-li text-14-semi-bold">Shop</li>
-              <li className="hp-menu-li text-14-semi-bold">Product</li>
-              <li className="hp-menu-li text-14-semi-bold">Blog</li>
-              <li className="hp-menu-li text-14-semi-bold">Contact Us</li>
-            </ul>
-          </div>
-          <div className="hp-copyright-div">
-            <div className="hp-copyright-left-div">
-              <p className="copyright-text">
-                Copyright © 2023 3legant. All rights reserved
-              </p>
-              <p className="privacy-policy">Privacy Policy</p>
-              <p className="privacy-policy">Terms of Use</p>
-            </div>
-            <div className="hp-copyright-right-div">
-              <img src={instagram} alt="instagram" />
-              <img src={facebook} alt="facebook" />
-              <img src={youTube} alt="you tube" />
-            </div>
-          </div>
-        </div>
-      </footer>
+      <ContactUs />
+      <Footer />
       <OutsideClickHandler
         onOutsideClick={() => {
           setOpenCartModal(false);
