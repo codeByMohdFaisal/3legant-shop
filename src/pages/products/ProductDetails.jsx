@@ -97,14 +97,14 @@ const ProductDetails = () => {
                     alt="img-2"
                   />
                 </div>
-                <div className="product-related-image">
+                <div className="product-related-image-div">
                   <img
                     className="product-related-image"
                     src={productImg3}
                     alt="img-3"
                   />
                 </div>
-                <div className="product-related-image">
+                <div className="product-related-image-div">
                   <img
                     className="product-related-image"
                     src={productImg4}
@@ -304,16 +304,20 @@ const ProductDetails = () => {
             </div>
             <div className="customer-reviews-listing-div">
               <div className="customer-reviews-list-div">
-                <img
-                  className="customer-profile-img"
-                  src={profileImg1}
-                  alt="profile-img"
-                />
-                <div className="customer-reviews-list-right-div">
-                  <p className="customer-review-list-title">Sofia Harvetz</p>
-                  <div className="rating-box-parent">
-                    <RatingBox />
+                <div className="customer-img-name-parent-div">
+                  <img
+                    className="customer-profile-img"
+                    src={profileImg2}
+                    alt="profile-img"
+                  />
+                  <div className="customer-reviews-list-right-div">
+                    <p className="customer-review-list-title">Sofia Harvetz</p>
+                    <div className="rating-box-parent">
+                      <RatingBox />
+                    </div>
                   </div>
+                </div>
+                <div className="review-desc-parent-div">
                   <p className="customer-review-list-comment">
                     I bought it 3 weeks ago and now come back just to say
                     “Awesome Product”. I really enjoy it. At vero eos et
@@ -328,16 +332,20 @@ const ProductDetails = () => {
                 </div>
               </div>
               <div className="customer-reviews-list-div">
-                <img
-                  className="customer-profile-img"
-                  src={profileImg2}
-                  alt="profile-img"
-                />
-                <div className="customer-reviews-list-right-div">
-                  <p className="customer-review-list-title">Sofia Harvetz</p>
-                  <div className="rating-box-parent">
-                    <RatingBox />
+                <div className="customer-img-name-parent-div">
+                  <img
+                    className="customer-profile-img"
+                    src={profileImg3}
+                    alt="profile-img"
+                  />
+                  <div className="customer-reviews-list-right-div">
+                    <p className="customer-review-list-title">Sofia Harvetz</p>
+                    <div className="rating-box-parent">
+                      <RatingBox />
+                    </div>
                   </div>
+                </div>
+                <div className="review-desc-parent-div">
                   <p className="customer-review-list-comment">
                     I bought it 3 weeks ago and now come back just to say
                     “Awesome Product”. I really enjoy it. At vero eos et
@@ -346,46 +354,26 @@ const ProductDetails = () => {
                     molestias excepturi sint non provident.
                   </p>
                   <div className="customer-reaction-div">
-                    <p className="like-text">Like</p>
+                    <p className="like-text ">Like</p>
                     <p className="like-text reply-text">Reply</p>
                   </div>
                 </div>
               </div>
               <div className="customer-reviews-list-div">
-                <img
-                  className="customer-profile-img"
-                  src={profileImg3}
-                  alt="profile-img"
-                />
-                <div className="customer-reviews-list-right-div">
-                  <p className="customer-review-list-title">Sofia Harvetz</p>
-                  <div className="rating-box-parent">
-                    <RatingBox />
-                  </div>
-                  <p className="customer-review-list-comment">
-                    I bought it 3 weeks ago and now come back just to say
-                    “Awesome Product”. I really enjoy it. At vero eos et
-                    accusamus et iusto odio dignissimos ducimus qui blanditiis
-                    praesentium voluptatum deleniti atque corrupt et quas
-                    molestias excepturi sint non provident.
-                  </p>
-                  <div className="customer-reaction-div">
-                    <p className="like-text">Like</p>
-                    <p className="reply-text like-text">Reply</p>
+                <div className="customer-img-name-parent-div">
+                  <img
+                    className="customer-profile-img"
+                    src={profileImg4}
+                    alt="profile-img"
+                  />
+                  <div className="customer-reviews-list-right-div">
+                    <p className="customer-review-list-title">Sofia Harvetz</p>
+                    <div className="rating-box-parent">
+                      <RatingBox />
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="customer-reviews-list-div">
-                <img
-                  className="customer-profile-img"
-                  src={profileImg4}
-                  alt="profile-img"
-                />
-                <div className="customer-reviews-list-right-div">
-                  <p className="customer-review-list-title">Sofia Harvetz</p>
-                  <div className="rating-box-parent">
-                    <RatingBox />
-                  </div>
+                <div className="review-desc-parent-div">
                   <p className="customer-review-list-comment">
                     I bought it 3 weeks ago and now come back just to say
                     “Awesome Product”. I really enjoy it. At vero eos et
@@ -394,22 +382,26 @@ const ProductDetails = () => {
                     molestias excepturi sint non provident.
                   </p>
                   <div className="customer-reaction-div">
-                    <p className="like-text">Like</p>
+                    <p className="like-text ">Like</p>
                     <p className="like-text reply-text">Reply</p>
                   </div>
                 </div>
               </div>
               <div className="customer-reviews-list-div">
-                <img
-                  className="customer-profile-img"
-                  src={profileImg5}
-                  alt="profile-img"
-                />
-                <div className="customer-reviews-list-right-div">
-                  <p className="customer-review-list-title">Sofia Harvetz</p>
-                  <div className="rating-box-parent">
-                    <RatingBox />
+                <div className="customer-img-name-parent-div">
+                  <img
+                    className="customer-profile-img"
+                    src={profileImg5}
+                    alt="profile-img"
+                  />
+                  <div className="customer-reviews-list-right-div">
+                    <p className="customer-review-list-title">Sofia Harvetz</p>
+                    <div className="rating-box-parent">
+                      <RatingBox />
+                    </div>
                   </div>
+                </div>
+                <div className="review-desc-parent-div">
                   <p className="customer-review-list-comment">
                     I bought it 3 weeks ago and now come back just to say
                     “Awesome Product”. I really enjoy it. At vero eos et
@@ -418,11 +410,12 @@ const ProductDetails = () => {
                     molestias excepturi sint non provident.
                   </p>
                   <div className="customer-reaction-div">
-                    <p className="like-text">Like</p>
+                    <p className="like-text ">Like</p>
                     <p className="like-text reply-text">Reply</p>
                   </div>
                 </div>
               </div>
+
               <button className="load-more-btn">Load More</button>
             </div>
           </div>

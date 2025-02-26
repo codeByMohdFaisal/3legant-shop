@@ -1,21 +1,28 @@
 .product-details-img-desc-parent-div {
   display: flex;
-  gap: 63px;
+  justify-content: space-between;
+  /* gap: 63px; */
+}
+.product-details-images {
+  width: 49%;
+}
+.product-details-description {
+  width: 45.4%;
+}
+.product-details-main-img {
+  width: 100%;
 }
 .product-other-related-images {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(166px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 24px;
   padding-top: 24px;
 }
 .product-details-main-img-div {
   position: relative;
+  /* height: 728px; */
 }
 
-.product-related-image-div {
-  width: 100%;
-  height: 167px;
-}
 .product-related-image {
   width: 100%;
   height: 100%;
@@ -156,6 +163,7 @@
   font-family: var(--primary-ff);
   margin-bottom: 0px;
   padding-bottom: 12px;
+  padding-top: 24px;
 }
 
 .timer-number {
@@ -193,6 +201,7 @@
   line-height: 22px;
   font-family: var(--secondary-ff);
   margin-bottom: 0px;
+  padding-top: 24px;
 }
 
 .measurement-title-desc {
@@ -404,6 +413,11 @@ button.wishllist-btn {
   border-radius: 8px;
 }
 
+.customer-img-name-parent-div {
+  display: flex;
+  gap: 40px;
+}
+
 .customer-reviews-listing-div {
   padding-top: 40px;
 }
@@ -441,10 +455,11 @@ button.wishllist-btn {
 }
 
 .customer-reviews-list-div {
-  display: flex;
-  gap: 40px;
   border-bottom: 2px solid #e8ecef;
   margin-bottom: 24px;
+}
+.review-desc-parent-div {
+  padding-left: 112px;
 }
 
 .rating-box-parent {
@@ -474,4 +489,45 @@ button.wishllist-btn {
   border: 1px solid #141718;
   margin-inline: auto;
   margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  /* .product-details-main-img-div {
+    height: 500px;
+  } */
+  .product-details-img-desc-parent-div {
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+  }
+  .product-details-images {
+    width: 100%;
+  }
+  .product-details-description {
+    width: 100%;
+  }
+  .product-details-main-img {
+    width: 100%;
+    height: 100%;
+  }
+  .product-other-related-images {
+    display: none;
+  }
+  .product-images-color-div {
+    gap: 8px;
+  }
+  .color-image-div img {
+    height: 100%;
+    width: 100%;
+  }
+  .customer-menu {
+    gap: 20px;
+  }
+  .review-desc-parent-div {
+    padding-left: 0px;
+    padding-top: 16px;
+  }
+  .header-breadcrumb {
+    gap: 4px;
+  }
 }

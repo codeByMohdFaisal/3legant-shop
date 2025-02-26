@@ -19,73 +19,75 @@ const NavigationMenu = ({ targetFadedBgRef }) => {
     }
   };
   return (
-    <div className="home-page-top-section">
-      <div className="mob-menu-parent">
-        <img className="mob-menu-icon" src={mobMenuIcon} alt="mob-menu" />
-        <img src={companyLogo} alt="company-logo" />
-      </div>
+    <>
+      <div className="home-page-top-section">
+        <div className="mob-menu-parent">
+          <img className="mob-menu-icon" src={mobMenuIcon} alt="mob-menu" />
+          <img src={companyLogo} alt="company-logo" />
+        </div>
 
-      <nav className="home-page-nav">
-        <ul className="navbar-parent">
-          <li>
-            <Link
-              className={`navbar-items ${
-                window.location.pathname.includes("home-page")
-                  ? "selected-nav-items"
-                  : ""
-              }`}
-              to={"/home-page"}
-            >
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link
-              className={`navbar-items ${
-                window.location.pathname.includes("shop")
-                  ? "selected-nav-items"
-                  : ""
-              }`}
-              to={"/"}
-            >
-              Shop
-            </Link>
-          </li>
-          <li>
-            <Link
-              className={`navbar-items ${
-                window.location.pathname.includes("product-details")
-                  ? "selected-nav-items"
-                  : ""
-              }`}
-              to={"/product-details"}
-            >
-              Products
-            </Link>
-          </li>
-          <li>
-            <Link
-              className={`navbar-items ${
-                window.location.pathname.includes("contact-us")
-                  ? "selected-nav-items"
-                  : ""
-              }`}
-              to={"/"}
-            >
-              Contact Us
-            </Link>
-          </li>
-        </ul>
-      </nav>
-      <div className="navbar-icons">
-        <img className="navbar-icon" src={searchIcon} alt="search-icon" />
-        <img className="navbar-icon" src={profileIcon} alt="profile-icon" />
-        <img
-          className="cart-icon"
-          src={cartIcon}
-          alt="cart-icon"
-          onClick={(e) => handleCartModal(e, !openCartModal)}
-        />
+        <nav className="home-page-nav">
+          <ul className="navbar-parent">
+            <li>
+              <Link
+                className={`navbar-items ${
+                  window.location.pathname.includes("home-page")
+                    ? "selected-nav-items"
+                    : ""
+                }`}
+                to={"/home-page"}
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                className={`navbar-items ${
+                  window.location.pathname.includes("shop")
+                    ? "selected-nav-items"
+                    : ""
+                }`}
+                to={"/"}
+              >
+                Shop
+              </Link>
+            </li>
+            <li>
+              <Link
+                className={`navbar-items ${
+                  window.location.pathname.includes("product-details")
+                    ? "selected-nav-items"
+                    : ""
+                }`}
+                to={"/product-details"}
+              >
+                Products
+              </Link>
+            </li>
+            <li>
+              <Link
+                className={`navbar-items ${
+                  window.location.pathname.includes("contact-us")
+                    ? "selected-nav-items"
+                    : ""
+                }`}
+                to={"/"}
+              >
+                Contact Us
+              </Link>
+            </li>
+          </ul>
+        </nav>
+        <div className="navbar-icons">
+          <img className="navbar-icon" src={searchIcon} alt="search-icon" />
+          <img className="navbar-icon" src={profileIcon} alt="profile-icon" />
+          <img
+            className="cart-icon"
+            src={cartIcon}
+            alt="cart-icon"
+            onClick={(e) => handleCartModal(e, !openCartModal)}
+          />
+        </div>
       </div>
       <OutsideClickHandler
         onOutsideClick={() => {
@@ -95,7 +97,7 @@ const NavigationMenu = ({ targetFadedBgRef }) => {
       >
         <CartModal openCartModal={openCartModal} />
       </OutsideClickHandler>
-    </div>
+    </>
   );
 };
 
